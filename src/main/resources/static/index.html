@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Concessionaria Spring</title>
+</head>
+<body>
+<h1>Cadastro de veículos</h1>
+<p>Cadastre os novos veículos abaixo:</p>
+<input type="text" id="marca" placeholder="Marca">
+<input type="text" id="modelo" placeholder="Modelo">
+<input type="number" id="ano" placeholder="Ano">
+<input type="number" id="preco" placeholder="Preço">
+<h2>Está disponível?</h2>
+<input type="checkbox" id="disponivel">
+<label for="disponivel" value="true">Sim</label>
+<label for="disponivel" value="false">Não</label>
+
+
+
+<button onclick="salvar()">Cadastrar veículo</button>
+
+<h2>Lista de veículos</h2>
+<ul id="lista"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
