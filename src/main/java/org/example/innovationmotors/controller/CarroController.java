@@ -38,22 +38,22 @@ public class CarroController {
         return carroService.buscarPorId(id);
     }
 
-    @GetMapping("/buscarPorMarca/{marca}")
+    @GetMapping("/buscarPorMarca{marca}")
     public List<CarroModel> buscarPorMarca(@RequestParam String marca){
         return carroService.buscarPorMarca(marca);
     }
 
-    @GetMapping("/buscarPorModelo/{modelo}")
+    @GetMapping("/buscarPorModelo{modelo}")
     public List<CarroModel> buscarPorModelo(@RequestParam String modelo){
         return carroService.buscaPorModelo(modelo);
     }
 
-    @GetMapping("/buscarPorAno/{ano}")
+    @GetMapping("/buscarPorAno{ano}")
     public List<CarroModel> buscarPorAno(@RequestParam Integer ano){
         return carroService.buscarPorAno(ano);
     }
 
-    @GetMapping("buscarPorPreco/{preco}")
+    @GetMapping("buscarPorPreco{preco}")
     public List<CarroModel> buscarPorPreco(@RequestParam Double preco){
         return carroService.buscarPorPreco(preco);
     }

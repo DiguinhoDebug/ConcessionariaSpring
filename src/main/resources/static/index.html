@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Concessionaria Spring</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Cadastro de veículos</h1>
@@ -12,11 +13,13 @@
 <input type="number" id="ano" placeholder="Ano">
 <input type="number" id="preco" placeholder="Preço">
 <h2>Está disponível?</h2>
-<input type="checkbox" id="disponivel">
-<label for="disponivel" value="true">Sim</label>
-<label for="disponivel" value="false">Não</label>
+<select name="disponivel" id="disponivel">
+    <option value="true">Sim</option>
+    <option value="false">Não</option>
+</select>
 
-
+<br>
+<br>
 
 <button onclick="salvar()">Cadastrar veículo</button>
 

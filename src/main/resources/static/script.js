@@ -1,14 +1,14 @@
-const url = "http://localhost:8080/livraria";
+const url = "http://localhost:8080/concessionaria";
 function salvar(){
-    const livro = {
-        titulo: document.getElementById("titulo").value,
-        autor: document.getElementById("autor").value,
-        preco: parseFloat(document.getElementById("preco").value),
-        estoque: parseInt(document.getElementById("estoque").value),
-        isbn: document.getElementById("isbn").value
+    const carro = {
+        marca: document.getElementById("marca").value,
+        modelo: document.getElementById("modelo").value,
+        ano: parseFloat(document.getElementById("ano").value),
+        preco: parseInt(document.getElementById("preco").value),
+        disponivel: document.getElementById("disponivel").value
     };
 
-    fetch (url, {method: "POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(livro)}).then(() => listar());
+    fetch (url, {method: "POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify(carro)}).then(() => listar());
 }
 
 function listar(){
@@ -18,9 +18,9 @@ function listar(){
         const lista = document.getElementById("lista");
         lista.innerHTML = "";
 
-    dados.forEach(livro => {
-    const li = document.createElement("li");
-    li.innerText = `${livro.titulo} - ${livro.autor} - ${livro.preco}`;
+    dados.forEach(carro => {
+    const ca = document.createElement(ca);
+    li.innerText = `${carro.marca} - ${carro.modelo} - ${carro.ano} - ${carro.preco} - ${carro.disponibilidade}`;
     lista.appendChild(li);
     });
     });
