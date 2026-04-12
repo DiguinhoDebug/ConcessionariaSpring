@@ -19,8 +19,8 @@ function listar(){
         lista.innerHTML = "";
 
     dados.forEach(carro => {
-    const ca = document.createElement(ca);
-    li.innerText = `${carro.marca} - ${carro.modelo} - ${carro.ano} - ${carro.preco} - ${carro.disponibilidade}`;
+    const li = document.createElement("li");
+    li.innerText = `${carro.marca} - ${carro.modelo} - ${carro.ano} - ${carro.preco} - ${carro.disponivel}`;
     lista.appendChild(li);
     });
     });
